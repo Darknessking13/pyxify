@@ -214,15 +214,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Support
 
 If you have any questions or need help, please open an issue on GitHub.
-
-```plaintext
-
-This README provides a comprehensive guide to your Pyxify framework, including installation instructions, basic usage examples, and detailed documentation of all major features. Users can quickly get started with the framework and find information about its various capabilities.
-
-Remember to:
-1. Replace `[Your Name]` with your actual name
-2. Add any additional features specific to your implementation
-3. Update the examples if you've made any changes to the API
-4. Add any specific requirements or dependencies
-5. Include any additional configuration options you've implemented
-```
