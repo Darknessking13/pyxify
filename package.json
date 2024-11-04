@@ -1,0 +1,63 @@
+{
+  "name": "pyxify",
+  "version": "0.0.1-beta",
+  "description": "A lightweight, fast, and modern web framework for Node.js.",
+  "main": "lib/pyxify.js",
+  "files": [
+    "lib",
+    "lib/pyxify.js",
+    "lib/core/application.js",
+    "lib/helpers/controller.js",
+    "lib/helpers/cache.js",
+    "lib/helpers/middleware.js",
+    "lib/helpers/router.js",
+    "lib/utils/utils.js",
+    "lib/View-Engine/view-engine.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node lib/pyxify.js"
+  },
+  "keywords": [
+    "web framework",
+    "nodejs",
+    "http",
+    "router",
+    "mvc",
+    "express",
+    "fastify",
+    "lightweight",
+    "high-performance"
+  ],
+  "author": {
+    "name": "! Ｄᴇᴠɪʟɪѕʜ ｃʜʀᴏɴɪᴄʟᴇѕ",
+    "url": "https://github.com/Darknessking13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Darknessking13/pyxify.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "nunjucks": "^3.2.3",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^8.12.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "mocha": "^10.0.0",
+    "typescript": "^4.9.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://github.com/Darknessking13/pyxify#readme",
+  "bugs": {
+    "url": "https://github.com/Darknessking13/pyxify/issues"
+  }
+}
