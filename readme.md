@@ -1,6 +1,6 @@
 # Pyxify
 
-A lightweight and fast web framework for Node.js. Pyxify provides an intuitive API for building web applications and RESTful APIs with features like routing, middleware support, view engine integration, and more.
+A lightweight and fast web framework for Node.js. Pyxify provides an intuitive API for building web applications and RESTful APIs with features like routing, middleware support, view engine integration, and more. 
 
 ## Features
 
@@ -197,7 +197,7 @@ my-app/
 ## Configuration
 
 ```javascript
-app.set('maxJsonSize', 2 * 1024 * 1024); // Set max JSON size to 2MB
+app.set('maxJsonSize', 1024 * 1024); // Set max JSON size to 1MB
 ```
 
 ## Contributing
@@ -213,4 +213,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
+<<<<<<< HEAD
 If you have any questions or need help, please open an issue on GitHub.
