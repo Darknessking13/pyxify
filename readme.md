@@ -16,14 +16,15 @@ A lightweight and fast web framework for Node.js. Pyxify provides an intuitive A
 ## Installation
 
 ```bash
-npm install pyxify
+npm install pyxify@latest
 ```
 
 ## Quick Start
 
 ```javascript
-const pyxify = require('pyxify');
-const app = pyxify();
+// import { pyxify } from "pyxify";
+const { pyxify } = require('pyxify');
+const app = pyxify;
 
 app.get('/', (req, res) => {
   res.json({ message: 'Hello, Pyxify!' });
@@ -39,16 +40,16 @@ app.listen(3000, () => {
 ### Basic Routes
 
 ```javascript
-const pyxify = require('pyxify');
-const Router = pyxify.Router;
+// import { router } from "pyxify";
+const { router } = require('pyxify');
 
-const router = new Router();
+const route = router;
 
-router.get('/', (req, res) => {
+route.get('/', (req, res) => {
   res.json({ message: 'Hello, World!' });
 });
 
-router.post('/users', (req, res) => {
+route.post('/users', (req, res) => {
   // Handle user creation
 });
 ```
@@ -56,7 +57,7 @@ router.post('/users', (req, res) => {
 ### Route Parameters
 
 ```javascript
-router.get('/users/:id', (req, res) => {
+route.get('/users/:id', (req, res) => {
   const userId = req.params.id;
   res.json({ message: `Fetching user ${userId}` });
 });
@@ -66,12 +67,12 @@ router.get('/users/:id', (req, res) => {
 
 ```javascript
 // routes/users.js
-const pyxify = require('pyxify');
-const Router = pyxify.Router;
+// import { router } from "pyxify";
+const { router } = require('pyxify');
 
-const router = new Router();
+const route = router;
 
-router.get('/', (req, res) => {
+route.get('/', (req, res) => {
   res.json({ users: ['Alice', 'Bob'] });
 });
 
@@ -107,7 +108,7 @@ function authMiddleware(req, res, next) {
   }
 }
 
-router.get('/protected', authMiddleware, (req, res) => {
+route.get('/protected', authMiddleware, (req, res) => {
   res.json({ message: 'Protected route' });
 });
 ```
@@ -147,8 +148,8 @@ module.exports = UserController;
 
 // routes/users.js
 const UserController = require('../controllers/userController');
-router.get('/', UserController.getAllUsers);
-router.get('/:id', UserController.getUserById);
+route.get('/', UserController.getAllUsers);
+route.get('/:id', UserController.getUserById);
 ```
 
 ## Error Handling
@@ -210,6 +211,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Author
 - ! Ｄᴇᴠɪʟɪѕʜ ｃʜʀᴏɴɪᴄʟᴇѕ
+- Iscordian.dev
 
 ## Support
 
