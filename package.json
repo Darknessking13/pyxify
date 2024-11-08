@@ -1,11 +1,19 @@
 {
   "name": "pyxify",
-  "version": "0.0.1-beta",
+  "version": "0.0.2-beta",
   "description": "A lightweight, fast, and modern web framework for Node.js.",
   "main": "lib/pyxify.js",
+  "module": "lib/pyxify.mjs",
+  "exports": {
+    ".": {
+      "require": "./lib/pyxify.js",
+      "import": "./lib/pyxify.mjs"
+    }
+  },
   "files": [
     "lib",
     "lib/pyxify.js",
+    "lib/pyxify.mjs",
     "lib/core/application.js",
     "lib/helpers/controller.js",
     "lib/helpers/cache.js",
@@ -37,6 +45,15 @@
     "type": "git",
     "url": "https://github.com/Darknessking13/pyxify.git"
   },
+  "contributors": [
+    {
+      "name": "! Ｄᴇᴠɪʟɪѕʜ ｃʜʀᴏɴɪᴄʟᴇѕ"
+    },
+    {
+      "name": "Iscordian.dev",
+      "email": "iscordian.dev@gmail.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.6",
